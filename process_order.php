@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <body>
                                 <div class='header'>
                                 <h1>Order Confirmation</h1>
-                                    <img src='https://mosabaliportfolio.com/help-pakistan/images/Email-Messages-for-Order-Confirmation-Page-v3.webp' alt='Company Poster'>                                    
+                                    <img src='https://assignmenthelppakistan.pk/help-pakistan/images/Email-Messages-for-Order-Confirmation-Page-v3.webp' alt='Company Poster'>                                    
                                 </div>
                                 <div class='content'>
                                     <p>Dear <strong style='color: #01a544;'>$name</strong>,</p>
@@ -153,12 +153,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                    
                                 </div>
                                 <div class='footer'>
-                                    <img src='https://mosabaliportfolio.com/help-pakistan/images/logo-tp.png' alt='Company Logo' width='100px'>
-                                    <p style='color: #111312;'>For any assistance, contact us on WhatsApp: <strong><a href='https://wa.me/+44 (117) 205-0252' style='color: #01a544;' target='_blank'>+44 (117) 205-0252</a></strong></p>
+                                    <img src='https://assignmenthelppakistan.pk/help-pakistan/images/logo-tp.png' alt='Company Logo' width='100px'>
+                                    <p style='color: #111312;'>For any assistance, contact us on WhatsApp: <strong><a href='https://wa.me/03313999517' style='color: #01a544;' target='_blank'>03313999517</a></strong></p>
                                     <div class='social-icons'>
-                                        <a href='#' target='_blank'><img src='https://mosabaliportfolio.com/help-pakistan/images/fb.png' alt='Facebook'></a>
-                                        <a href='#' target='_blank'><img src='https://mosabaliportfolio.com/help-pakistan/images/twi.png' alt='Twitter'></a>
-                                        <a href='#' target='_blank'><img src='https://mosabaliportfolio.com/help-pakistan/images/insta.png' alt='Instagram'></a>
+                                        <a href='#' target='_blank'><img src='https://assignmenthelppakistan.pk/help-pakistan/images/fb.png' alt='Facebook'></a>
+                                        <a href='#' target='_blank'><img src='https://assignmenthelppakistan.pk/help-pakistan/images/twi.png' alt='Twitter'></a>
+                                        <a href='#' target='_blank'><img src='https://assignmenthelppakistan.pk/help-pakistan/images/insta.png' alt='Instagram'></a>
                                     </div>
                                 </div>
                             </body>
@@ -239,7 +239,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <body>
                                 <div class='header'>
                                 <h1>New Order Received</h1>
-                                    <img src='https://mosabaliportfolio.com/help-pakistan/images/Email-Messages-for-Order-Confirmation-Page-v3.webp' alt='Company Poster'>                                   
+                                    <img src='https://assignmenthelppakistan.pk/help-pakistan/images/Email-Messages-for-Order-Confirmation-Page-v3.webp' alt='Company Poster'>                                   
                                 </div>
                                 <div class='content'>
                                     <p>A new order has been received. Below are the details:</p>
@@ -287,8 +287,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     </table>
                                 </div>
                                 <div class='footer'>
-                                    <img src='https://mosabaliportfolio.com/help-pakistan/images/logo-tp.png' alt='Company Logo' width='100px'>
-                                    <p style='color: #111312;'>For any assistance, contact us on WhatsApp: <strong><a href='https://wa.me/+44 (117) 205-0252' style='color: #01a544;' target='_blank'>+44 (117) 205-0252</a></strong></p>
+                                    <img src='https://assignmenthelppakistan.pk/help-pakistan/images/logo-tp.png' alt='Company Logo' width='100px'>
+                                    <p style='color: #111312;'>For any assistance, contact us on WhatsApp: <strong><a href='https://wa.me/03313999517' style='color: #01a544;' target='_blank'>03313999517</a></strong></p>
                                 </div>
                             </body>
                         </html>";

@@ -51,14 +51,14 @@ var Tawk_API = Tawk_API || {},
         <div class="col-9">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <img class="footer-logo img-fluid" src="images/logo-op.png" alt="logo here">
+                    <img class="footer-logo img-fluid" src="images/logo-tp.png" alt="logo here">
                     <h6 class="pb-3">Why Choose US</h6>
                     <p class="pb-3">Thousands of students and professionals rely on us for their writing tasks to
                         achieve their goals in academic life. Our services are offered as a fusion of quality,
                         affordability, reliability and utmost dedication.</p>
                     <div class="social_media_btns">
                         <ul>
-                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-x"></i></a></li>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
@@ -91,9 +91,9 @@ var Tawk_API = Tawk_API || {},
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <h6 class="pb-3">OUR SUBJECTS</h6>
                     <ul>
-                        <li class="pb-1"><a href="">care@assignmentmaster.co.uk</a></li>
-                        <li class="pb-1"><a href="">+44 (117) 205-0252</a></li>
-                        <li class="pb-1"><a href="">Start Live Chat</a></li>
+                        <li class="pb-1"><a href="">info@assignmenthelppakistan.pk</a></li>
+                        <li class="pb-1"><a href="">0331 3999517</a></li>
+                        <li class="pb-1"><a href="https://embed.tawk.to/62fe1dd837898912e963ba14/1gaoa9657">Start Live Chat</a></li>
                         <li class="pb-1"><a href="">Follow Us on Facebook</a></li>
                     </ul>
                     <img class="img-fluid pt-2" src="images/payment-card.png" alt="">

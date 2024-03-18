@@ -27,6 +27,8 @@ $(window).scroll(function () {
 
 
 $('.testi-slider').slick({
+  autoplay: true,
+  autoplaySpeed: 1000,
   dots: true,
   infinite: false,
   speed: 300,
@@ -81,3 +83,6 @@ const items = document.querySelectorAll(".accordion a");
         }
 
         items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+        

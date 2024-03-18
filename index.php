@@ -40,15 +40,15 @@ $page = 'home';
                         <form class="banner-form" action="" method="" data-animation="zoomReverseIn"
                             data-animation-delay="100ms">
                             <h3 class="gaq text-white">Get a Quote</h3>
-                            <p class="form-hed text-white pb-1 ms-2">Refrencing style</p>
-                            <div class="input-group mb-2">
+                            <!-- <p class="form-hed text-white pb-1 ms-2">Refrencing style</p> -->
+                            <!-- <div class="input-group mb-2">
                                 <select class="form-select" id="inputGroupSelect01">
                                     <option selected>Paper Refrencing</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                            </div>
+                            </div> -->
                             <p class="form-hed text-white pb-1 ms-2">Paper Type</p>
                             <div class="input-group mb-2">
                                 <select class="form-select" id="paper_type" name="paper_type">
@@ -334,8 +334,8 @@ $page = 'home';
                                 </select>
                             </div>
                             <div class="price-and-btn">
-                                <a class="btn-solid" href="order-now.php">Oreder Now</a>
-                                <h3 class="gaq text-white">Rs .00</h3>
+                                <a class="btn-solid" href="order-now.php">Proceed Now</a>
+                                <h3 class="gaq text-white" id="price">Rs .00</h3>
                             </div>
                         </form>
                     </div>
@@ -343,6 +343,85 @@ $page = 'home';
             </div>
         </div>
     </section>
+    <script>
+    // Function to update the price based on selected options
+    function updatePrice() {
+        var selectedDeadline = document.getElementById("deadlines").value;
+        var selectedAcademicLevel = document.getElementById("academic_level").value;
+
+        // Define the pricing object
+        var deadlinePrices = {
+            "15 Days +": {
+                "Undergraduate": 600,
+                "Masters": 700,
+                "Mphil / Ph.D": 800
+            },
+            "10 Days": {
+                "Undergraduate": 700,
+                "Masters": 800,
+                "Mphil / Ph.D": 900
+            },
+            "7 Days": {
+                "Undergraduate": 800,
+                "Masters": 900,
+                "Mphil / Ph.D": 1000
+            },
+            "6 Days": {
+                "Undergraduate": 1100,
+                "Masters": 1100,
+                "Mphil / Ph.D": 1200
+            },
+            "5 Days": {
+                "Undergraduate": 1200,
+                "Masters": 1300,
+                "Mphil / Ph.D": 1400
+            },
+            "4 Days": {
+                "Undergraduate": 1300,
+                "Masters": 1400,
+                "Mphil / Ph.D": 1500
+            },
+            "3 Days": {
+                "Undergraduate": 1500,
+                "Masters": 1600,
+                "Mphil / Ph.D": 1700
+            },
+            "48 Hours": {
+                "Undergraduate": 1700,
+                "Masters": 1800,
+                "Mphil / Ph.D": 1900
+            },
+            "24 Hours": {
+                "Undergraduate": 1900,
+                "Masters": 2000,
+                "Mphil / Ph.D": 2100
+            },
+            "12 Hours": {
+                "Undergraduate": 2100,
+                "Masters": 2200,
+                "Mphil / Ph.D": 2300
+            },
+            "6 Hours": {
+                "Undergraduate": 2300,
+                "Masters": 2400,
+                "Mphil / Ph.D": 2500
+            }
+        };
+
+        // Get the price for the selected options
+        var price = deadlinePrices[selectedDeadline][selectedAcademicLevel];
+
+        // Update the price displayed
+        document.getElementById("price").innerText = "Rs " + price;
+    }
+
+    // Add event listeners to the select elements to trigger price update
+    document.getElementById("deadlines").addEventListener("change", updatePrice);
+    document.getElementById("academic_level").addEventListener("change", updatePrice);
+
+    // Call the function initially to set the default price
+    updatePrice();
+    </script>
     <!-- main baner ends here -->
 
     <!-- section start here -->
@@ -398,7 +477,7 @@ $page = 'home';
             <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xxl-9 col-xl-9">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-6 col-xl-6">
-                        <img class="img-fluid girl-img w-100" src="images/webp-folder/order-now-two.png" alt="">
+                        <img class="img-fluid girl-img w-100" src="images/webp-folder/order-now-two.webp" alt="">
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-6 col-xl-6">
                         <h1 class="text-dark" data-animation="slideInRight" data-animation-delay="50ms">Unleash Your
@@ -886,7 +965,7 @@ $page = 'home';
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 col-xxl-4 gy-4">
                         <div class="review mb-3" data-animation="fadeIn" data-animation-delay="130ms">
-                            <img class="rev-img img-fluid" src="images/rev-img.png" alt="">
+                            <img class="rev-img img-fluid" src="images/rev-img2.webp" alt="">
                             <div class="name-and-star">
                                 <h6>Sarah Maqsood</h6>
                                 <div class="star">
@@ -913,7 +992,7 @@ $page = 'home';
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 gy-4">
                         <div class="review mb-3" data-animation="slideInLeft" data-animation-delay="130ms">
-                            <img class="rev-img img-fluid" src="images/rev-img.png" alt="">
+                            <img class="rev-img img-fluid" src="images/rev-img3.webp" alt="">
                             <div class="name-and-star">
                                 <h6>Owais Wali</h6>
                                 <div class="star">
@@ -953,7 +1032,7 @@ $page = 'home';
                 <div class="row align-items-center">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 col-xxl-5">
                         <img class="testi-img img-fluid" data-animation="slideInRight" data-animation-delay="100ms"
-                            src="images/testi-img.png" alt="">
+                            src="images/testi-img.webp" alt="">
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7">
                         <div class="testi-slider">
@@ -1128,28 +1207,31 @@ $page = 'home';
                                                     Chat</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 ">
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                        <div id="section-eleven"
+                                            class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">98%
-                                                    </h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="98">0%</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Happy Bar</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved </h6>
                                                 </div>
                                             </div>
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        300+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="300">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Expert writers</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved</h6>
                                                 </div>
                                             </div>
@@ -1218,28 +1300,31 @@ $page = 'home';
                                                     Chat</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                        <div id="section-eleven"
+                                            class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">98%
-                                                    </h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="98">0%</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Happy Bar</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved </h6>
                                                 </div>
                                             </div>
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        300+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="300">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Expert writers</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved</h6>
                                                 </div>
                                             </div>
@@ -1309,28 +1394,31 @@ $page = 'home';
                                                     Chat</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                        <div id="section-eleven"
+                                            class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">98%
-                                                    </h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="98">0%</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Happy Bar</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved </h6>
                                                 </div>
                                             </div>
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        300+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="300">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Expert writers</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved</h6>
                                                 </div>
                                             </div>
@@ -1400,28 +1488,31 @@ $page = 'home';
                                                     Chat</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                        <div id="section-eleven"
+                                            class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">98%
-                                                    </h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="98">0%</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Happy Bar</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved </h6>
                                                 </div>
                                             </div>
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        300+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="300">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Expert writers</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved</h6>
                                                 </div>
                                             </div>
@@ -1491,28 +1582,31 @@ $page = 'home';
                                                     Chat</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                        <div id="section-eleven"
+                                            class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">98%
-                                                    </h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="98">0%</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Happy Bar</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved </h6>
                                                 </div>
                                             </div>
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        300+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="300">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Expert writers</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved</h6>
                                                 </div>
                                             </div>
@@ -1582,28 +1676,31 @@ $page = 'home';
                                                     Chat</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                        <div id="section-eleven"
+                                            class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">98%
-                                                    </h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="98">0%</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Happy Bar</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved </h6>
                                                 </div>
                                             </div>
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        300+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="300">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Expert writers</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved</h6>
                                                 </div>
                                             </div>
@@ -1673,32 +1770,36 @@ $page = 'home';
                                                     Chat</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                        <div id="section-eleven"
+                                            class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">98%
-                                                    </h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="98">0%</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Happy Bar</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved </h6>
                                                 </div>
                                             </div>
-                                            <div class="four-box" style="display: flex; justify-content: space-around;">
+                                            <div id="counter" class="four-box"
+                                                style="display: flex; justify-content: space-around;">
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        300+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="300">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Expert writers</h6>
                                                 </div>
                                                 <div class="box">
-                                                    <h3 style="font-family: 'Rubik', sans-serif;  font-weight:bold;">
-                                                        2186+</h3>
+                                                    <h3 style="font-family: 'Rubik', sans-serif; font-weight: bold;"
+                                                        data-count="2186">0</h3>
                                                     <h6 style="font-family: 'Rubik', sans-serif;">Grades Improved</h6>
                                                 </div>
                                             </div>
                                         </div>
+
 
                                     </div>
                                 </div>
@@ -1708,7 +1809,52 @@ $page = 'home';
                 </div>
             </div>
     </section>
+
+    <script>
+    function startCountersOnScroll() {
+        const counters = document.querySelectorAll('#section-eleven [data-count]');
+        const speed = 10; // Adjust the speed as needed
+
+        function updateCount(counter) {
+            const target = +counter.getAttribute('data-count');
+            const increment = Math.ceil(target / speed);
+
+            let currentValue = 0;
+            const interval = setInterval(() => {
+                currentValue += increment;
+                if (currentValue >= target) {
+                    clearInterval(interval);
+                    currentValue = target;
+                }
+                if (counter.innerText.includes('%')) {
+                    counter.innerText = currentValue + '%';
+                } else {
+                    counter.innerText = currentValue + '+';
+                }
+            }, 20); // Adjust the interval as needed
+        }
+
+        function checkCounters() {
+            counters.forEach(counter => {
+                const rect = counter.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                if (rect.top <= windowHeight && rect.bottom >= 0) {
+                    updateCount(counter);
+                }
+            });
+        }
+
+        // Initial check when the page loads
+        checkCounters();
+
+        // Check counters when the page is scrolled
+        window.addEventListener('scroll', checkCounters);
+    }
+
+    startCountersOnScroll();
+    </script>
     <!-- section eleven ends here -->
+
 
     <!-- section FAQ start  here -->
     <section class="section-faq">
@@ -1720,7 +1866,7 @@ $page = 'home';
                         <div class="accordion">
                             <div class="accordion-item">
                                 <a>
-                                    <h4>What are the benefits of seeking professional help with my assignments in
+                                    <h4 style="padding: 0 20px 0;">What are the benefits of seeking professional help with my assignments in
                                         Pakistan?</h4>
                                 </a>
                                 <div class="content active">
@@ -1735,7 +1881,7 @@ $page = 'home';
                             </div>
                             <div class="accordion-item">
                                 <a>
-                                    <h4>Are there any affordable assignment help options available?</h4>
+                                    <h4 style="padding: 0 20px 0;">Are there any affordable assignment help options available?</h4>
                                 </a>
                                 <div class="content">
                                     <p>Yes, there are affordable help for assignment options available, and we are a
@@ -1748,7 +1894,7 @@ $page = 'home';
                             </div>
                             <div class="accordion-item">
                                 <a>
-                                    <h4>How can I ensure the confidentiality and security of my personal information
+                                    <h4 style="padding: 0 20px 0;">How can I ensure the confidentiality and security of my personal information
                                         when using assignment help?</h4>
                                 </a>
                                 <div class="content">
@@ -1763,7 +1909,7 @@ $page = 'home';
                             </div>
                             <div class="accordion-item">
                                 <a>
-                                    <h4>Can I get help with urgent assignments that have tight deadlines?</h4>
+                                    <h4 style="padding: 0 20px 0;">Can I get help with urgent assignments that have tight deadlines?</h4>
                                 </a>
                                 <div class="content">
                                     <p>Assignment Help Pakistan is the go-to solution for instant assignments with tight
@@ -1782,7 +1928,7 @@ $page = 'home';
                         <div class="accordion">
                             <div class="accordion-item">
                                 <a>
-                                    <h4>Are there any specific subject areas or topics that assignment help services
+                                    <h4 style="padding: 0 20px 0;">Are there any specific subject areas or topics that assignment help services
                                         specialize in?</h4>
                                 </a>
                                 <div class="content">
@@ -1796,7 +1942,7 @@ $page = 'home';
                             </div>
                             <div class="accordion-item">
                                 <a>
-                                    <h4>Can I request revisions for my assignment if needed?</h4>
+                                    <h4 style="padding: 0 20px 0;">Can I request revisions for my assignment if needed?</h4>
                                 </a>
                                 <div class="content">
                                     <p>Absolutely! At Assignment Help Pakistan, we prioritize customer satisfaction, and
@@ -1810,7 +1956,7 @@ $page = 'home';
                             </div>
                             <div class="accordion-item">
                                 <a>
-                                    <h4>Does AssignmentHelpPakistan offer proofreading and editing assistance</h4>
+                                    <h4 style="padding: 0 20px 0;">Does AssignmentHelpPakistan offer proofreading and editing assistance</h4>
                                 </a>
                                 <div class="content">
                                     <p>Yes, Assignment Help Pakistan offers comprehensive proofreading and editing
@@ -1825,7 +1971,7 @@ $page = 'home';
                             </div>
                             <div class="accordion-item">
                                 <a>
-                                    <h4>Can I see sample works or testimonials before availing of the assignment help
+                                    <h4 style="padding: 0 20px 0;">Can I see sample works or testimonials before availing of the assignment help
                                         service?</h4>
                                 </a>
                                 <div class="content">
@@ -1839,7 +1985,7 @@ $page = 'home';
                                         samples and testimonials to build trust and confidence in our services. </p>
                                 </div>
                             </div>
-                            <img class="img-fluid pt-2" src="images/faq.png" alt="">
+                            <img class="img-fluid pt-2" src="images/faq.webp" alt="">
                         </div>
                     </div>
                 </div>

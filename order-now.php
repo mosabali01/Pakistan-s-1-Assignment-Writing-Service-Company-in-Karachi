@@ -286,8 +286,7 @@ $page = 'Order Now';
                             <textarea class="form-control-2" rows="8" name="instructions" id="instructions"
                                 aria-label="With textarea" spellcheck="false"></textarea>
                                 
-                                <p>Total Price: <span id="total_price">0 PKR</span></p>
-
+                                
                                 <input class="order-btn" type="submit" name="submit" value="Order Now">
                         </form>
                     </div>
@@ -298,6 +297,8 @@ $page = 'Order Now';
                             <a href="" class="chat-btn mb-3" style="border-color: #fff; color:#fff;">Live Chat</a>
                         </div>
                         <div class="payment-and-sec">
+                        <p style="font-weight: 900;">Total Price: <span style="color: #000;" id="total_price">0 PKR</span></p>
+                        <hr>
                             <h3 class="ps">Payment & Security</h3>
                             <img class="img-fluid pt-3" src="images/payment-card.png" alt="">
                         </div>

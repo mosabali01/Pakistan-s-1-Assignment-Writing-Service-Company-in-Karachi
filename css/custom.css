@@ -1049,7 +1049,7 @@ width: 100%;
   width: 1%;
   min-width: 0;
   border-radius: 30px;
-  padding: 11px 40px;
+  padding: 7px 35px;
   border: 1px solid #01a544;
 }
 .order-now .form-control{
@@ -1189,7 +1189,7 @@ font-family: 'Rubik', sans-serif;
 /* HEADER */
 .main-header {
   padding: 0px 20px 0;
-  background-color: white;
+  /* background-color: white; */
 }
 .main-header .nav-btn {
 font-size: 15px;
@@ -1211,7 +1211,7 @@ font-size: 16px;
 /* MAIN BANNER  */
 .main-banner {
   padding: 100px 25px 100px;
-  height: 120vh;
+  height: 76vh;
 }
 .banner-text {
 font-size: 20px;
@@ -1461,7 +1461,7 @@ padding: 8px 10px;
  /* HEADER */
  .main-header {
   padding: 0px 20px 0;
-  background-color: white;
+  /* background-color: white; */
 }
 .main-header .nav-btn {
 font-size: 15px;
@@ -1483,7 +1483,7 @@ font-size: 16px;
 /* MAIN BANNER  */
 .main-banner {
   padding: 100px 25px 100px;
-  height: 120vh;
+  height: 90vh;
 }
 .banner-text {
 font-size: 20px;
@@ -1733,7 +1733,7 @@ padding: 8px 10px;
    /* HEADER */
    .main-header {
     padding: 0px 20px 0;
-    background-color: white;
+    /* background-color: white; */
 }
 .main-header .nav-btn {
   font-size: 16px;
@@ -1781,14 +1781,14 @@ padding: 8px 10px;
 }
 .main-banner .banner-form {
   padding: 18px;
-  width: 75%;
+  width: 65%;
   margin: 40px 0 0;
 }
 .main-banner::before {
   width: 394px;
   height: 100%;
-  bottom: -158px;
-  right: -60px;
+  bottom: -155px;
+  right: -6px;
 }
   /* MAIN BANNER */
 
@@ -1845,13 +1845,15 @@ padding: 8px 10px;
 #wrapper .book-para {
   font-size: 13px;
   text-align: justify;
+  padding: 0 30px 0px;
 }
 .open-book article *:not(.chapter-title):not(hr):not(dl) {
   margin: 10px 0px auto;
   max-width: 54.125em;
+  padding: 0 30px 0;
 }
 #wrapper {
-  max-width: 65em;
+  max-width: 80em;
 }
 .open-book:after {
   top: 1em;
@@ -2008,7 +2010,7 @@ p {
    /* HEADER */
    .main-header {
     padding: 0px 20px 0;
-    background-color: white;
+    /* background-color: white; */
 }
 .main-header .nav-btn {
   font-size: 13px;
@@ -2094,7 +2096,7 @@ p {
     width: 35%;
 }
 .section-four .service-card {
-  height: 249px;
+  height: 220px;
 }
   /* SECTION FOUR */
 
@@ -2118,10 +2120,12 @@ p {
 }
 #wrapper .book-para {
   font-size: 13px;
+  padding: 0 20px 0;
 }
 .open-book article *:not(.chapter-title):not(hr):not(dl) {
   margin: 10px 0px auto;
   max-width: 54.125em;
+  padding: 0 20px 0;
 }
 #wrapper {
   max-width: 65em;
@@ -2280,7 +2284,7 @@ p {
   /* HEADER */
   .main-header {
     padding: 0px 20px 0;
-    background-color: white;
+    /* background-color: white; */
 }
 .main-header .nav-btn {
   font-size: 13px;
@@ -2302,7 +2306,7 @@ p {
   /* MAIN BANNER  */
   .main-banner {
     padding: 100px 25px 100px;
-    height: 140vh;
+    height: 111vh;
 }
 .banner-text {
   font-size: 18px;
@@ -2320,22 +2324,22 @@ p {
 }
 
 .form-hed {
-  font-size: 18px;
+  font-size: 15px;
 } 
 
 .gaq {
-  font-size: 30px;
+  font-size: 25px;
 }
 .main-banner .banner-form {
   padding: 18px;
-  width: 75%;
+  width: 69%;
   margin: 40px 0 0;
 }
 .main-banner::before {
-  width: 394px;
-  height: 100%;
-  bottom: -147px;
-  right: -90px;
+  width: 298px;
+  height: 90%;
+  bottom: -137px;
+  right: 0px;
 }
   /* MAIN BANNER */
 
@@ -2394,6 +2398,7 @@ p {
 .open-book article *:not(.chapter-title):not(hr):not(dl) {
   margin: 10px 0px auto;
   max-width: 54.125em;
+  padding: 0 20px 0;
 }
 #wrapper {
   max-width: 65em;
@@ -2552,7 +2557,7 @@ p {
   /* HEADER */
   .main-header {
     padding: 0px 20px 0;
-    background-color: white;
+    /* background-color: white; */
 }
 .main-header .nav-btn {
   font-size: 13px;
@@ -2654,10 +2659,12 @@ p {
 }
 #wrapper .book-para {
   font-size: 13px;
+  padding: 0 20px 0;
 }
 .open-book article *:not(.chapter-title):not(hr):not(dl) {
   margin: 10px 0px auto;
   max-width: 54.125em;
+  padding: 0 20px 0;
 }
   /* WRAPPER */
 
@@ -2819,7 +2826,7 @@ p {
    /* HEADER */
    .main-header {
     padding: 0px 20px 0;
-    background-color: white;
+    /* background-color: white; */
 }
 .main-header .nav-btn {
   font-size: 13px;
@@ -3079,7 +3086,7 @@ p {
     /* HEADER */
     .main-header {
       padding: 0px 20px 0;
-      background-color: white;
+      /* background-color: white; */
   }
   .main-header .nav-btn {
     font-size: 13px;

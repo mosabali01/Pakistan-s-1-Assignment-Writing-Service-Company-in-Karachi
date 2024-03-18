@@ -59,9 +59,9 @@ Meta Description: Pakistan's #1 Assignment Writing Service Company in Karachi
                                         <a class="nav-link" aria-current="page" href="#services">Services</a>
                                         <!-- Dropdown content -->
                                         <div class="dropdown-content">
-                                            <a href="#">Dropdown Item 1</a>
-                                            <a href="#">Dropdown Item 2</a>
-                                            <a href="#">Dropdown Item 3</a>
+                                            <a href="#">service 1</a>
+                                            <!-- <a href="#">Dropdown Item 2</a>
+                                            <a href="#">Dropdown Item 3</a> -->
                                         </div>
                                     </li>
                                     <li class="nav-item">
@@ -80,7 +80,7 @@ Meta Description: Pakistan's #1 Assignment Writing Service Company in Karachi
                                 </ul>
                                 <form class="d-flex">
 
-                                    <a class="nav-btn" href="#"> Chat</a>
+                                    <a class="nav-btn" href=""> Chat</a>
                                     <a class="nav-btn-tw" href="order-now.php"> Order</a>
 
                                 </form>
